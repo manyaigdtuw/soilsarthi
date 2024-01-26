@@ -1,15 +1,15 @@
 function gradeQuiz() {
     const answers = {
-        q1: "B", // Correct answer: B. To track income and expenses
-        q2: "C", // Correct answer: C. It covers unexpected expenses
-        q3: "C", // Correct answer: C. Payment history and debt utilization
-        q4: "B", // Correct answer: B. It increases debt exponentially
-        q5: "B", // Correct answer: B. To minimize risk
-        q6: "B", // Correct answer: B. Ownership in a company
-        q7: "C", // Correct answer: C. Compounding can work over a longer period
-        q8: "A", // Correct answer: A. Contribution limits
-        q9: "C", // Correct answer: C. It protects against medical costs
-        q10: "C" // Correct answer: C. Death benefit to beneficiaries
+        q1: "C",  // Nitrogen fixation
+        q2: "B",  // Alfalfa
+        q3: "A",  // 0-5°C
+        q4: "B",  // Geographic Information System
+        q5: "C",  // Ethylene
+        q6: "D",  // Recording precipitation
+        q7: "A",  // Aquaponics
+        q8: "C",  // Significant increase in crop yields
+        q9: "A",  // Ladybug
+        q10: "C"  // Charcoal
     };
 
     let score = 0;
