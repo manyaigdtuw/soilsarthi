@@ -147,39 +147,28 @@
       </div>
     </header>
     <body>
-    <h2>Crop Efficiency Calculator</h2>
-    <form id="cropEfficiencyForm">
-        <label for="weatherState">Weather State:</label>
-        <input type="text" id="weatherState" name="weatherState" required><br><br>
-
-        <label for="city">City:</label>
-        <input type="text" id="city" name="city" required><br><br>
-
-        <label for="crop">Crop:</label>
-        <input type="text" id="crop" name="crop" required><br><br>
-
-        <button type="button" onclick="calculateCropEfficiency()">Calculate Crop Efficiency</button>
-    </form>
-
-    <div id="cropEfficiencyResult" style="display: none;">
-        <h3>Crop Efficiency Result:</h3>
-        <p id="cropEfficiencyOutput"></p>
+      <div class="calculator">
+        <h1>AgroOracle Calculator</h1>
+        <form id="agroForm">
+            <div class="input-group">
+                <label for="mainSoil">Main Soil:</label>
+                <input type="text" id="mainSoil" name="mainSoil">
+            </div>
+            <div class="input-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="input-group">
+                <label for="crops">Crops:</label>
+                <input type="text" id="crops" name="crops">
+            </div>
+            <button type="button" onclick="calculate()">Calculate</button>
+        </form>
+        <div id="output" class="output">
+            <!-- Output will be displayed here -->
+        </div>
     </div>
-
-    <script>
-        function calculateCropEfficiency() {
-            // Fetch inputs
-            var weatherState = document.getElementById('weatherState').value;
-            var city = document.getElementById('city').value;
-            var crop = document.getElementById('crop').value;
-
-            // Dummy calculation for demonstration
-            var cropEfficiency = Math.random() * 100; // Generating random crop efficiency
-
-            // Display result
-            document.getElementById('cropEfficiencyOutput').innerText = "Crop efficiency for " + crop + " in " + city + ", " + weatherState + " is " + cropEfficiency.toFixed(2) + "%";
-            document.getElementById('cropEfficiencyResult').style.display = 'block';
-        }
-    </script>
+      
+   
 </body>
 </html>
