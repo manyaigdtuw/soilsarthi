@@ -93,19 +93,54 @@
                     <button type="submit">Login</button>
                 </div>
             </form>
+
+            <h2>Signup</h2>
+            <form id="signupForm" style="display:none;">
+                <div class="form-group">
+                    <label for="signupName">Name:</label>
+                    <input type="text" id="signupName" name="signupName" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email:</label>
+                    <input type="email" id="signupEmail" name="signupEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password:</label>
+                    <input type="password" id="signupPassword" name="signupPassword" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Signup</button>
+                </div>
+            </form>
+
+            <h2>Sign In</h2>
+            <form id="signInForm" style="display:none;">
+                <div class="form-group">
+                    <label for="signInEmail">Email:</label>
+                    <input type="email" id="signInEmail" name="signInEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="signInPassword">Password:</label>
+                    <input type="password" id="signInPassword" name="signInPassword" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Sign In</button>
+                </div>
+            </form>
+
             <div class="switch-form">
-                Don't have an account? <a href="#" onclick="toggleForm()">Signup</a>
+                <a href="#" onclick="toggleForm('loginForm', 'signupForm')">Don't have an account? Signup</a><br>
+                <a href="#" onclick="toggleForm('loginForm', 'signInForm')">Sign In</a>
             </div>
         </div>
     </div>
 
     <script>
-        function toggleForm() {
-            var loginForm = document.getElementById('loginForm');
-            var signupForm = document.getElementById('signupForm');
-            loginForm.style.display = (loginForm.style.display === 'none') ? 'block' : 'none';
-            signupForm.style.display = (signupForm.style.display === 'none') ? 'block' : 'none';
+        function toggleForm(hideFormId, showFormId) {
+            document.getElementById(hideFormId).style.display = 'none';
+            document.getElementById(showFormId).style.display = 'block';
         }
     </script>
 </body>
 </html>
+
