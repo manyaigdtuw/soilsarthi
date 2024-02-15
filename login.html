@@ -240,6 +240,30 @@
             </div>
           </div>
         </div>
+     <div class="container">
+        <div class="form-container">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email:</label>
+                    <input type="email" id="loginEmail" name="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" name="loginPassword" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+            <div class="switch-form">
+                Don't have an account? <a href="#" onclick="toggleForm()">Signup</a>
+            </div>
+        </div>
+    </div>
+
+  
+
         <div class="footer-copyright">
           <div class="row">
             <div class="col-lg-12">
@@ -272,6 +296,14 @@
     <script src="../assets/js/wow.min.js"></script>
     <script src="../assets/js/particles.min.js"></script>
     <script src="../assets/js/main.js"></script>
+     <script>
+        function toggleForm() {
+            var loginForm = document.getElementById('loginForm');
+            var signupForm = document.getElementById('signupForm');
+            loginForm.style.display = (loginForm.style.display === 'none') ? 'block' : 'none';
+            signupForm.style.display = (signupForm.style.display === 'none') ? 'block' : 'none';
+        }
+    </script>
          
    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 <script>
