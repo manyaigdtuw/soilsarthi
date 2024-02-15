@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f7f4; /* Light pastel green */
+    margin: 0;
+    padding: 0;
+}
+
+.calculator {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #e0f0ff; /* Light pastel blue */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator h1 {
+    text-align: center;
+    color: #008080; /* Darker pastel green */
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #008080; /* Darker pastel green */
+}
+
+.input-group input[type="text"],
+.input-group input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #b3cccc; /* Lighter pastel green */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #66c2ff; /* Light pastel blue */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4da6ff; /* Slightly darker shade of pastel blue on hover */
+}
+
+.output {
+    margin-top: 20px;
+    background-color: #d9f7e9; /* Light pastel green */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #80d4aa; /* Lighter pastel green */
+    color: #008080; /* Darker pastel green */
+}
